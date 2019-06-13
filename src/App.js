@@ -5,21 +5,12 @@ import './App.css';
 
 class App extends Component {
 
-
-
-	constructor() {
-		super();
-
-		this.renderer = ({ days, hours, minutes, seconds}) => {
-			return <span>{days} dni {hours} godzin {minutes} minut {seconds} sekund</span>;
-		}
-
+	
+	renderer = ({ days, hours, minutes, seconds}) => {
+		return <span>{days} dni {hours} godzin {minutes} minut {seconds} sekund</span>;
 	}
   
   render() {
-
-		let newDate = new Date();
-		console.log(newDate);
     return (
       <div className="App">
         <header className="App-header">
